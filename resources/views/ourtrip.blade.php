@@ -140,60 +140,10 @@
                             <div class="tourmaster-tour-item clearfix tourmaster-tour-item-style-grid tourmaster-tour-item-column-2">
 
 
-
-                                <div
-                                    class="tourmaster-tour-order-filterer-wrap tourmaster-item-mglr clearfix"
-                                    data-tm-ajax="tourmaster_tour_order_ajax"
-                                    data-settings='{"category":"","tag":"","num-fetch":"9","layout":"fitrows","thumbnail-size":"Personnel Thumbnail","orderby":"date","order":"desc","tour-style":"grid","hover":"title-icon","hover-info":["title","icon"],"has-column":"yes","no-space":"no","excerpt":"none","excerpt-number":"55","column-size":"30","filterer":"none","filterer-align":"center","pagination":"page","custom-pagination":true,"grid-style":"style-2","tour-info":["duration-text","availability","departure-location"],"tour-rating":"enable","tour-border-radius":"10px","frame-shadow-size":{"x":"0px","y":"20px","size":"25px"},"frame-shadow-color":"#004760","frame-shadow-opacity":"0.09","tour-title-font-size":"21px","tour-title-font-weight":"500","tour-title-letter-spacing":"0px","tour-title-text-transform":"none","price-position":"","paged":1,"filter-icon":"svg","enable-order-filterer":"enable","order-filterer-grid-style":"grid-with-frame","order-filterer-grid-style-thumbnail":"Personnel Thumbnail","order-filterer-grid-style-column":"30","order-filterer-list-style":"medium-with-frame","order-filterer-list-style-thumbnail":"Tour Side Thumbnail","s":"","tax_query":{"relation":"AND"},"meta_query":{"relation":"AND"},"with-frame":"enable","column-size-temp":"30"}'
-                                    data-target="tourmaster-tour-item-holder"
-                                    data-target-action="replace"
-                                    data-ajax-url="https://demo.goodlayers.com/zurf/scuba/wp-admin/admin-ajax.php"
-                                >
-                                    <h3 class="tourmaster-tour-order-filterer-title">Sort by</h3>
-                                    <div class="tourmaster-combobox-wrap">
-                                        <select data-ajax-name="orderby">
-                                            <option value="date" selected="">Release Date</option>
-                                            <option value="tour-date">Tour Date</option>
-                                            <option value="title">Title</option>
-                                            <option value="price">Price</option>
-                                            <option value="popularity">Popularity</option>
-                                            <option value="rating">Rating</option>
-                                            <option value="duration">Duration</option>
-                                        </select>
-                                    </div>
-                                    <div class="tourmaster-combobox-wrap">
-                                        <select data-ajax-name="order">
-                                            <option value="asc">Ascending</option>
-                                            <option value="desc" selected="">Descending</option>
-                                        </select>
-                                    </div>
-                                    <span class="tourmaster-tour-order-filterer-style">
-                                        <a href="#" data-ajax-name="item-style" class="" data-ajax-value="list-style">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewbox="0 0 25 20">
-                                                <circle class="cls-1" cx="2" cy="2" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_2" data-name="Ellipse 955 copy 2" class="cls-1" cx="2" cy="10" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_3" data-name="Ellipse 955 copy 3" class="cls-1" cx="2" cy="18" r="2"></circle>
-                                                <rect class="cls-1" x="6" width="19" height="4" rx="2" ry="2"></rect>
-                                                <rect id="Rectangle_959_copy" data-name="Rectangle 959 copy" class="cls-1" x="6" y="8" width="19" height="4" rx="2" ry="2"></rect>
-                                                <rect id="Rectangle_959_copy_2" data-name="Rectangle 959 copy 2" class="cls-1" x="6" y="16" width="19" height="4" rx="2" ry="2"></rect>
-                                            </svg>
-                                        </a>
-                                        <a href="#" data-ajax-name="item-style" class="tourmaster-active" data-ajax-value="grid-style">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
-                                                <circle id="Ellipse_955_copy_2" data-name="Ellipse 955 copy 2" class="cls-1" cx="2" cy="2" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_3" data-name="Ellipse 955 copy 3" class="cls-1" cx="9" cy="2" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_4" data-name="Ellipse 955 copy 4" class="cls-1" cx="16" cy="2" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_5" data-name="Ellipse 955 copy 5" class="cls-1" cx="2" cy="9" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_5-2" data-name="Ellipse 955 copy 5" class="cls-1" cx="9" cy="9" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_5-3" data-name="Ellipse 955 copy 5" class="cls-1" cx="16" cy="9" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_6" data-name="Ellipse 955 copy 6" class="cls-1" cx="2" cy="16" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_6-2" data-name="Ellipse 955 copy 6" class="cls-1" cx="9" cy="16" r="2"></circle>
-                                                <circle id="Ellipse_955_copy_6-3" data-name="Ellipse 955 copy 6" class="cls-1" cx="16" cy="16" r="2"></circle>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                </div>
-
+                                <div class="InputContainer">
+                                    <input placeholder="Search" id="input" class="input" name="text" type="text" />
+                                    <button id="searchButton" class="searchButton">Search</button>
+                                  </div>
 
                                 <form action="{{ route('tripcruds.store') }}" method="POST" enctype="multipart/form-data" class="trip-form">
                                     @csrf
@@ -401,7 +351,7 @@
     }
     
     .form-group {
-        flex-basis: 48%; /* تحديد عرض الحقول ليكون 48% من الحاوية */
+        flex-basis: 48%; 
         margin-right: 2%;
     }
     
@@ -464,7 +414,77 @@
     
         .form-group {
             margin-bottom: 15px;
-            flex-basis: 100%; /* في الشاشات الصغيرة، الحقول تأخذ 100% من العرض */
+            flex-basis: 100%; 
         }
     }
     </style>
+/*******************search*************************
+<style> 
+.InputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .input {
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  .searchButton {
+    padding: 10px 20px;
+    background-color: #104581;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  .searchButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+</style>  
+<script>
+   
+    document.addEventListener('DOMContentLoaded', function () {
+        const input = document.getElementById('input'); 
+        const items = document.querySelectorAll('.tourmaster-tour-grid'); 
+
+        
+        input.addEventListener('input', function () {
+            const searchQuery = input.value.toLowerCase();
+
+            items.forEach(function (item) {
+               
+                const title = item.querySelector('.tourmaster-tour-title span').textContent.toLowerCase(); 
+                const description = item.querySelector('.tourmaster-tour-description').textContent.toLowerCase();
+                const price = item.querySelector('.tourmaster-tour-price').textContent.toLowerCase(); 
+                const location = item.querySelector('.tourmaster-tour-info-departure-location').textContent.toLowerCase(); 
+                const duration = item.querySelector('.tourmaster-tour-info-duration-text').textContent.toLowerCase(); 
+                const availability = item.querySelector('.tourmaster-tour-info-availability') ? item.querySelector('.tourmaster-tour-info-availability').textContent.toLowerCase() : '';
+
+
+                if (title.includes(searchQuery) || description.includes(searchQuery) || price.includes(searchQuery) || location.includes(searchQuery) || duration.includes(searchQuery)) {
+                    item.style.display = ''; 
+                } else {
+                    item.style.display = 'none'; 
+                }
+            });
+        });
+    });
+</script>
+
