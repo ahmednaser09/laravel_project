@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\OurtripcrudsController;
+use App\Http\Controllers\OurtripsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,3 +37,20 @@ Route::get('/ourtrip', function () {
 Route::get('/singletor', function () {
     return view('singletor');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.layout.mainBody');
+});
+Route::get('/charts', function () {
+    return view('dashboard.layout.charts');
+});
+
+Route::get('/our', function () {
+    return view('dashboard.layout.ourtripcrud.create');
+});
+
+Route::resource('ourtrips',OurtripsController::class);
+
+Route::resource('tripcruds',OurtripcrudsController::class);
+
+Route::resource('booknows', BookingController::class);

@@ -1,0 +1,10 @@
+.tourmaster-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* المسافة بين الكروت */
+}
+
+.tourmaster-tour-frame {
+    flex: 1 1 calc(33.33% - 20px); /* يحدد الحجم الإجمالي لكل كرت */
+    box-sizing: border-box;
+}

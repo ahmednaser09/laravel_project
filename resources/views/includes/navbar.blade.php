@@ -70,7 +70,7 @@
                                 </ul>
                             </div>
                             <div class="zurf-main-menu-right-wrap clearfix">
-                                <a class="zurf-main-menu-right-button zurf-button-1 zurf-style-default" href="ourtrip" target="_self">Our Trips</a>
+                                <a class="zurf-main-menu-right-button zurf-button-1 zurf-style-default" href="{{ route('tripcruds.index') }}" target="_self">Our Trips</a>
                             </div>
                         </div>
                         <!-- zurf-navigation -->

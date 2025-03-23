@@ -80,7 +80,7 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr">
                                         <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-rectangle" style="border-width: 0px; max-width: 60px;">
-                                            <a class="gdlr-core-lightgallery gdlr-core-js" href="images/wave.jpg">
+                                            <a class="gdlr-core-lightgallery gdlr-core-js" href="images1/wave.jpg">
                                                 <img src="images/wave.jpg" alt="" width="120" height="36" title="wave" />
                                                 <span class="gdlr-core-image-overlay"><i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i></span>
                                             </a>

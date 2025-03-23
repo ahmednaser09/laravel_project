@@ -54,5 +54,8 @@
 <script data-minify="1" type="text/javascript" src="js/jquery.mmenu.js" id="zurf-jquery-mmenu-js" data-rocket-defer="" defer=""></script>
 <script data-minify="1" type="text/javascript" src="js/jquery.superfish.js" id="zurf-jquery-superfish-js" data-rocket-defer="" defer=""></script>
 <script data-minify="1" type="text/javascript" src="js/script-core.js" id="zurf-script-core-js" data-rocket-defer="" defer=""></script>
+<script src="js/script11.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </body>
 </html>

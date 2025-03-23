@@ -25,6 +25,10 @@
     <link data-minify="1" rel="stylesheet" id="tourmaster-custom-style-css" href="{{ asset('css/tourmaster-style-custom.css') }}" type="text/css" media="all"/>
     <link data-minify="1" rel="stylesheet" id="zurf-style-core-css" href="{{ asset('css/style-core.css') }}" type="text/css" media="all"/>
     <link data-minify="1" rel="stylesheet" id="zurf-custom-style-css" href="{{ asset('css/zurf-style-custom.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     
 </head>
 <body class="home page-template-default page page-id-15793 theme-zurf gdlr-core-body tourmaster-body woocommerce-no-js zurf-body zurf-body-front zurf-full zurf-with-sticky-navigation zurf-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html">
