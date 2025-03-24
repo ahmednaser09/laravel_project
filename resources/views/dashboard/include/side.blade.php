@@ -50,6 +50,10 @@
                     </li>
                 </ul>
                 <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{{route('ourteams.create')}}">Our Team</a>
+                    </li>
+                </ul>
+                <ul class="nav flex-column sub-menu">
                     <li class="nav-item"> <a class="nav-link" href="{{route('tripcruds.index')}}">ourtripcruds</a>
                     </li>
                 </ul>

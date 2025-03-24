@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\OurteamController;
 use App\Http\Controllers\OurtripcrudsController;
 use App\Http\Controllers\OurtripsController;
 use Illuminate\Support\Facades\Route;
@@ -54,3 +55,5 @@ Route::resource('ourtrips',OurtripsController::class);
 Route::resource('tripcruds',OurtripcrudsController::class);
 
 Route::resource('booknows', BookingController::class);
+
+Route::resource('ourteams', OurteamController::class);

@@ -63,7 +63,7 @@
                                     <li class="menu-item"><a href="contact">Contact</a></li>
 
                                     <li class="menu-item menu-item-has-children zurf-normal-menu">
-                                        <li class="menu-item" data-size="60"><a href="ourteam">Our Team</a></li>
+                                        <li class="menu-item" data-size="60"><a href="{{route('ourteams.index')}}">Our Team</a></li>
                                    
                                     </li>
                                     

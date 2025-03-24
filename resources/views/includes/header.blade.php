@@ -58,7 +58,7 @@
                                 <li class="menu-item"><a href="about-us.html">About Us</a></li>
                                 <li class="menu-item"><a href="about-us-2.html">About Us 2</a></li>
                                 <li class="menu-item"><a href="about-us-3.html">About Us 3</a></li>
-                                <li class="menu-item"><a href="our-team.html">Our Team</a></li>
+                                <li class="menu-item"><a href="{{route('ourteams.index')}}">Our Team</a></li>
                             </ul>
                             </li>
                             <li class="menu-item menu-item-has-children">

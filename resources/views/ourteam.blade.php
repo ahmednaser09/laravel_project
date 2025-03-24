@@ -61,45 +61,26 @@
                 <div class="gdlr-core-pbf-element">
                     <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-personnel-item-style-grid gdlr-core-personnel-style-grid gdlr-core-with-divider">
                         <div class="gdlr-core-personnel-item-holder clearfix">
-                            <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-column-first gdlr-core-item-pdlr clearfix">
-                                <div class="gdlr-core-personnel-list clearfix">
-                                    <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                        <a href="index.html">
-                                            <img src="images/personnel-5-550x500.jpg" alt="" width="550" height="500" title="personnel-5" />
-                                        </a>
-                                        <div class="gdlr-core-hover-opacity"></div>
-                                    </div>
-                                    <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Kevin Cox</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
-                                        <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
-                                        <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-social">
-                                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
-                                                <a href="https://facebook.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                                                <a href="https://twitter.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @foreach ($ourteams as $ourteam)
                             <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-item-pdlr clearfix">
                                 <div class="gdlr-core-personnel-list clearfix">
                                     <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
                                         <a href="index.html">
-                                            <img src="images/personnel-6-550x500.jpg" alt="" width="550" height="500" title="personnel-6" />
+                                            <img src="{{ asset('storage/' . $ourteam->image) }}" alt="" width="550" height="500" title="personnel-{{ $loop->iteration }}" />
                                         </a>
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
+                
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Lisa Ortiz</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;">
+                                            <a href="">{{ $ourteam->name }}</a>
+                                        </h3>
+                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">
+                                            {{ $ourteam->title }}
+                                        </div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>{{ $ourteam->description }}</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -111,121 +92,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-item-pdlr clearfix">
-                                <div class="gdlr-core-personnel-list clearfix">
-                                    <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                        <a href="index.html">
-                                            <img src="images/personnel-4-550x500.jpg" alt="" width="550" height="500" title="personnel-4" />
-                                        </a>
-                                        <div class="gdlr-core-hover-opacity"></div>
-                                    </div>
-                                    <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Richard Murphy</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
-                                        <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
-                                        <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-social">
-                                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
-                                                <a href="https://facebook.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                                                <a href="https://twitter.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-column-first gdlr-core-item-pdlr clearfix">
-                                <div class="gdlr-core-personnel-list clearfix">
-                                    <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                        <a href="index.html">
-                                            <img
-                                                src="images/sebastian-pena-lambarri-W5ODK261mLY-unsplash-550x500.jpg"
-                                                alt=""
-                                                width="550"
-                                                height="500"
-                                                title="sebastian-pena-lambarri-W5ODK261mLY-unsplash"
-                                            />
-                                        </a>
-                                        <div class="gdlr-core-hover-opacity"></div>
-                                    </div>
-                                    <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Theodore Moore</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
-                                        <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
-                                        <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-social">
-                                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
-                                                <a href="https://facebook.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                                                <a href="https://twitter.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-item-pdlr clearfix">
-                                <div class="gdlr-core-personnel-list clearfix">
-                                    <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                        <a href="index.html">
-                                            <img
-                                                src="images/shutterstock_1022187463-550x500.jpg"
-                                                alt=""
-                                                width="550"
-                                                height="500"
-                                                title="shutterstock_1022187463"
-                                            />
-                                        </a>
-                                        <div class="gdlr-core-hover-opacity"></div>
-                                    </div>
-                                    <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Alexis Nelson</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
-                                        <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
-                                        <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-social">
-                                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
-                                                <a href="https://facebook.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                                                <a href="https://twitter.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gdlr-core-item-list gdlr-core-personnel-list-column gdlr-core-column-20 gdlr-core-item-pdlr clearfix">
-                                <div class="gdlr-core-personnel-list clearfix">
-                                    <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                        <a href="index.html">
-                                            <img src="images/personnel-3-1-550x500.jpg" alt="" width="550" height="500" title="personnel-3" />
-                                        </a>
-                                        <div class="gdlr-core-hover-opacity"></div>
-                                    </div>
-                                    <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Gabriel Thompson</a></h3>
-                                        <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
-                                        <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
-                                        <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-social">
-                                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
-                                                <a href="https://facebook.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                                                <a href="https://twitter.com/goodlayers" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
